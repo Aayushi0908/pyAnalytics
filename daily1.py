@@ -1,11 +1,19 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Jul 25 18:16:13 2020
+
+@author: Admin
+"""
+
 #Daily Practise File
 #-----------------------------
 #Data Structures
 #List - ordered collection of items, mutable : [square ]
-list1 = [1,2,3,4,5,'a','Dhiraj',"Upadhyaya",True]  #list type of object with data
+list1 = [1,2,3,4,5,'a','Aayushi',"Jain",True]  #list type of object with data
 list1  #print when through spyder
 type(list1)  #type of object
 print(list1)  #print when running complete file
+
 list1
 sorted([1,5,3,2,4,5,324,43,4,4,3,23,434,53442,244,2245224,523])
 list2 = ['f','c','d','e','f']
@@ -15,14 +23,14 @@ len(list2)
 dir(list) #functions which can be operated on list of DS
 sorted(list2)
 
-#%%
+#%%  to draw horizontal line
 #tuple - multiple type of objects like list, immutable: ( round brackets) : no changes
 tuple1 = (1, 2, 'a', 'b')
 tuple1
 type(tuple1)
 
 #%%
-#Dictionary - key-value pairs : { curly bracket and colon key:value}
+#Dictionary - key-value pairs : { curly bracket and colon key:value} key should be unique
 dict1 = {1:'Ramesh', 2:'Suresh', 3:'Priyanka'}
 dict1
 type(dict1)
@@ -50,7 +58,7 @@ set3
 sorted(set3)
 set2.union(set3) #set2 | set3
 #A.intersection(B)
-set2.intersection(set3) #set2 & set
+set2.intersection(set3) #intersection of set2 & set3
 
 type(set2)
 print(set2)
@@ -58,6 +66,7 @@ print(set2)
 #strings as text in string; imutable
 str1 = 'Python Programming'
 type(str1)
+len(str1)
 print(str1)
 str2="Yash"
 str2.lower()
@@ -71,7 +80,13 @@ for i in list1:
     print(i)
   
 for i in list1:    print(i)
-for i in list1:    print('Dhiraj ', i + 6)
+for i in list1:    print('Aayushi ', i + 6)
+list4=[1,2,3,4,5]
+for i in list4:     print('Aayushi ', i + 6)
+list4[0]
+list4[3]
+list50=["aayushi","akshita","priyansh"]
+for i in list50:    print(i)
 
 tuple1
 list5 = ['a',1]
@@ -115,9 +130,11 @@ namez
 #numpy - array - same data type
 import numpy
 numpy.array([10,20])
-
 import numpy as np #np is alias
 np1 = np.arange(1,10)
+print(np1)
+np2 = np.arrange([51,60])
+
 x=np.arange(start=1,stop=1000000,step=2)
 len(x)
 x[1:100]
@@ -216,3 +233,6 @@ data2a.head()
 data2c = pd.read_excel('mtcarsExcel.xlsx',header=0)
 #header=None
 data2c.head()
+
+
+
